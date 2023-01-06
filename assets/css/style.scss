@@ -67,7 +67,7 @@ header {
 a {
     color: var(--text);
     text-decoration: none;
-    transition: .3s all;
+
 
     &[--data-current="true"] {
         text-decoration: underline;
@@ -84,6 +84,17 @@ a {
     border-radius: 2px;
 }
 
+#posts {
+    position: absolute;
+    border: 1px var(--lighter-dark) solid;
+    top: 20%;
+    left: $left;
+    width: 77%;
+    height: 60%;
+    padding-top: 0;
+    padding: 1%;
+}
+
 .social-button {
     background-color: var(--lighter-dark);
     color: var(--text);
@@ -93,7 +104,7 @@ a {
     font-size: 1.2em;
     margin-top: .75%;
     margin-left: .5%;
-    transition: .3s all;
+
 
     &:first-of-type {
         margin-left: -.1%;
@@ -133,7 +144,7 @@ section#hero {
         line-height: 1em;
 
         .name:hover {
-            transition: .3s all;
+
             color: var(--accent);
             text-decoration: underline;
         }
@@ -151,34 +162,33 @@ section#blog {
         font-size: 2.5em;
         line-height: 1em;
     }
+}
 
+.post {
+    margin-top: 1%;
 
-    .post {
-        margin-top: 1%;
+    h1 {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
 
-        h1 {
-            font-size: 1.5em;
-            line-height: 1em;
-        }
+    position: absolute;
+    border: var(--lighter-dark) 1px solid;
+    width: 20%;
+    padding: 1%;
 
-        position: absolute;
-        border: var(--lighter-dark) 1px solid;
-        width: 20%;
-        padding: 1%;
+    .post-read {
 
-        .post-read {
-            transition: .3s all;
-            float: right;
-            background-color: var(--lighter-dark);
-            color: var(--text);
-            border: none;
-            padding: 6px;
-            border-radius: 4px;
+        float: right;
+        background-color: var(--lighter-dark);
+        color: var(--text);
+        border: none;
+        padding: 6px;
+        border-radius: 4px;
 
-            &:hover {
-                background-color: var(--accent);
-                cursor: pointer;
-            }
+        &:hover {
+            background-color: var(--accent);
+            cursor: pointer;
         }
     }
 }

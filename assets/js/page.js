@@ -47,15 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         post.style.left = `${index * 25}%`;
     }
+    parseCustomButtons();
 
-    // update the themes list
-    const themesList = document.getElementById("themes");
-    const themes = getThemes();
-    themes.sort((theme) => theme.type !== "dark");
-    themesList.innerHTML = themes.map((theme) => `<option value="${theme.id}">${theme.name}</option>`);
-
-    themesList.addEventListener("change", (event) => {
-        setTheme(event.target.value);
-        console.log(`Changing theme to ${event.target.value}`);
-    })
 });

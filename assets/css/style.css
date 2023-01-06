@@ -60,7 +60,6 @@ header .logo {
 a {
   color: var(--text);
   text-decoration: none;
-  transition: 0.3s all;
 }
 a[--data-current=true] {
   text-decoration: underline;
@@ -75,6 +74,17 @@ a:hover {
   border-radius: 2px;
 }
 
+#posts {
+  position: absolute;
+  border: 1px var(--lighter-dark) solid;
+  top: 20%;
+  left: 11%;
+  width: 77%;
+  height: 60%;
+  padding-top: 0;
+  padding: 1%;
+}
+
 .social-button {
   background-color: var(--lighter-dark);
   color: var(--text);
@@ -84,7 +94,6 @@ a:hover {
   font-size: 1.2em;
   margin-top: 0.75%;
   margin-left: 0.5%;
-  transition: 0.3s all;
 }
 .social-button:first-of-type {
   margin-left: -0.1%;
@@ -123,7 +132,6 @@ section#hero h1 {
   line-height: 1em;
 }
 section#hero h1 .name:hover {
-  transition: 0.3s all;
   color: var(--accent);
   text-decoration: underline;
 }
@@ -139,19 +147,19 @@ section#blog h1 {
   font-size: 2.5em;
   line-height: 1em;
 }
-section#blog .post {
+
+.post {
   margin-top: 1%;
   position: absolute;
   border: var(--lighter-dark) 1px solid;
   width: 20%;
   padding: 1%;
 }
-section#blog .post h1 {
+.post h1 {
   font-size: 1.5em;
   line-height: 1em;
 }
-section#blog .post .post-read {
-  transition: 0.3s all;
+.post .post-read {
   float: right;
   background-color: var(--lighter-dark);
   color: var(--text);
@@ -159,7 +167,7 @@ section#blog .post .post-read {
   padding: 6px;
   border-radius: 4px;
 }
-section#blog .post .post-read:hover {
+.post .post-read:hover {
   background-color: var(--accent);
   cursor: pointer;
 }

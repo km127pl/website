@@ -1,0 +1,13 @@
+[
+    {
+        "id": "welcome-to-my-site",
+        "title": "Welcome to my site!",
+        "description": [
+            "This is an example",
+            "article I have made to test ",
+            "the posts section."
+        ],
+        "url": "/post/?id=welcome-to-my-site",
+        "post": "/post/posts/welcome-to-my-site.md"
+    }
+]
