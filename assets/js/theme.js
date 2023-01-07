@@ -113,7 +113,7 @@ const loadThemeFromPreferences = () => {
     setTheme(localStorage.getItem("k-theme") || "dark");
 }
 
-const setTheme = (id) => {
+const setTheme = async (id) => {
     const root = document.querySelector(':root');
     const logo = document.getElementById("navbar-logo");
     const { type, colors } = getTheme(id);
@@ -135,7 +135,7 @@ const getThemes = () => {
     return themes;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     loadThemeFromPreferences();
 
     // update the themes list
@@ -148,6 +148,4 @@ document.addEventListener("DOMContentLoaded", () => {
         setTheme(event.target.value);
         console.log(`Changing theme to ${event.target.value}`);
     })
-
-
 });
